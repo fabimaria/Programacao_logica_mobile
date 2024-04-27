@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Criar uma pagina com sistema ou controle de multa
+Controle de Alfandega = Brasil não é estrangeiro-->
+<body>
+    <script>
+var media = __;
+//variavel recebe media = 0
+onEvent("text_input1", "input", function( ) {
+  //criar um botao para inserir um valor
+  var media = getText("text_input1");
+  //a media recebe o valor digitado no botao
+  if (media >= 7) {
+    //se a media for maior ou = 07
+    setText("label3", "Você está aprovado");
+    //a frase "Você está aprovado" é o resultado da media.
+  }
+});
+// 
+    </script>
+</body>
+</html>
