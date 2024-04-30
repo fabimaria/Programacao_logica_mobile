@@ -1,0 +1,57 @@
+<!--Aqui vai ter uma imagem pelo CSS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="mq-estilo.css">
+    <link rel="shortcut icon" href="opsz24.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>MVC-Controle de Multa</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- Aqui vai ter uma imagem pelo CSS // 
+                Criar uma pagina com sistema ou controle de Multa//
+                Controle de Alfandega = BRASIL não é Estrangeiro// -->
+            </div>
+            <div id="formulario">
+                <h1>CET - Controle de Multa</h1>
+                <p>Bem-vindo novamente, Digite a velocidade do veiculo e sua PLACA.
+                <p>Placa do Veiculo:
+                <input type="text" name="txtplaca" id="txtplaca"> (ABC1234)</p>
+                <p>Velocidade do Veiculo:<input type="number" name="txtvel" id="txtvel"> Km/h</p>
+                <input type="button" value="Verificar" onclick="calcular()">
+                </p>
+                <div id="resp"> </div>
+
+                <script>
+                    function calcular() {
+                        var txtvel = window.document.querySelector('input#txtvel')
+                        var vel = Number(txtvel.value)
+                        var resp = window.document.querySelector('div#resp')
+                        var placa = String(txtplaca.value)
+                        var txtplaca = window.document.querySelector('input#txtvel')
+                        /*as linhas 33,34 e 35 recebem as variáveis de velocidade e retorna a 'resposta' do valor de velocidade*/
+                        //resp.innerHTML = `<p>A velocidade do veiculo é de ${vel} Km/h</p>`
+                        if (vel > 60) {
+                            resp.innerHTML += `<p> Atenção a multa chegará em sua residência ${vel} Km/h</p>`
+                        } else {
+                            resp.innerHTML += `<p> Não exceda o limite de velocidade ${vel} Km/h</p>`
+                        }
+                    }
+                  
+                </script>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
