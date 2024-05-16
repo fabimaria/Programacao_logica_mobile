@@ -1,0 +1,25 @@
+@charset "UTF-08";
+
+body {
+    font-family: "Arial Black", Helvetica, Arial, sans-serif;
+    background-color: rgba(153, 18, 135, 0.829);
+    align-items: center;
+    justify-content: center;
+    background-image: url("capa8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*display: flex;*/
+    /*houver flow raiden ele limita a visualização do objeto, ele vai impedir que a página quebre*/
+
+}
+
+h1{
+    font-size: 2em;
+
+}
+
+canvas{
+    border: 5px solid rgb(116, 133, 22);
+    background-color: black;
+}
